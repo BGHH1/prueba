@@ -82,12 +82,14 @@ footer {
   }
 }
 #imagenesSubidas img {
-      max-width: 150px;
-      margin: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
+  width: 150px;          /* tamaño fijo */
+  height: 100px;         /* tamaño fijo */
+  object-fit: cover;     /* recorta sin deformar */
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
     #imagenesSubidas img:hover {
       transform: scale(1.05);
     }
